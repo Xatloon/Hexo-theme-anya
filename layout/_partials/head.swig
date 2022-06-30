@@ -117,12 +117,10 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '{{ theme.root }}',
-    scheme: '{{ theme.scheme }}',
     version: '{{ theme.version }}',
     sidebar: {{ theme.sidebar | json_encode }},
     fancybox: {{ theme.fancybox }},
     tabs: {{ theme.tabs.enable }},
-    motion: {{ theme.motion | json_encode }},
     since: '{{ theme.footer.since }}',
     site: {
       title: '{{ theme.title }}',

@@ -91,16 +91,6 @@ menu_icons:
   enable: true
 
 # ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
-
-# Schemes
-# scheme: Muse
-#scheme: Mist
-scheme: Pisces
-#scheme: Gemini
-
-# ---------------------------------------------------------------
 # Sidebar Settings
 # ---------------------------------------------------------------
 
@@ -205,6 +195,7 @@ links:
   云游君: https://www.yunyoujun.cn/ || /images/link/YunYouJun.jpg || 希望能成为一个有趣的人。
   小太: https://baka.fun/ || /images/link/Shota.png || 一个热爱ACG的技术宅
   小北: https://blog.happysec.cn/ || /images/link/depy.png || 网络安全爱好者~
+
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
@@ -315,15 +306,6 @@ mobile_layout_economy: false
 
 # Android Chrome header panel color ($black-deep).
 android_chrome_color: "#fff"
-
-# Custom Logo.
-# !!Only available for Default Scheme currently.
-# Options:
-#   enabled: [true/false] - Replace with specific image
-#   image: url-of-image   - Images's url
-custom_logo:
-  enabled: false
-  image:
 
 # Code Highlight theme
 # Available value:

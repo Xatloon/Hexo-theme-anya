@@ -1,5 +1,5 @@
 <nav class="site-nav">
-  {% set hasSearch = theme.swiftype_key || theme.algolia_search.enable || theme.tinysou_Key || theme.local_search.enable %}
+  {% set hasSearch = theme.swiftype_key || theme.tinysou_Key || theme.local_search.enable %}
 
   {% if theme.menu %}
     <ul id="menu" class="menu">
@@ -66,16 +66,7 @@
       <img loading="lazy" src="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/images/header-rss3.png">
     </picture>
   </div>
-  <div class="site-meta {% if theme.custom_logo.enabled %}custom-logo{% endif %}">
-    {% if theme.custom_logo.image and theme.scheme === 'Muse' %}
-      <div class="site-meta-headline">
-        <a>
-          <img class="custom-logo-image" src="{{ theme.custom_logo.image }}"
-               alt="{{ config.title }}"/>
-        </a>
-      </div>
-    {% endif %}
-
+  <div class="site-meta">
     <div class="custom-logo-site-title">
       <div class="brand">
         <span class="logo-line-before"><i></i></span>

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 
-{% set html_class = 'theme-next ' + theme.scheme %}
-{% if theme.motion.enable %}
-  {% set html_class = html_class + ' use-motion' %}
-{% endif %}
+{% set html_class = 'sagiri-x' %}
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
@@ -62,7 +59,7 @@
   </div>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script type="text/javascript" src="{{ url_for(theme.js) }}/sagiri.min.js?v={{ theme.version }}"></script>
+  <script type="text/javascript" src="{{ url_for(theme.js) }}/sagirix.min.js?v={{ theme.version }}"></script>
 
   {% include '_third-party/seo/baidu-push.swig' %}
   {% include '_third-party/rating.swig' %}

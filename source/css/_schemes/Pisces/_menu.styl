@@ -1,0 +1,233 @@
+.site-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  z-index: 3;
+  background: linear-gradient(rgba(0,0,0,.5),transparent);
+  height: 100px;
+}
+
+.site-nav-on {
+  +tablet() {
+    display: block !important;
+  }
+}
+
+.menu {
+  margin-top: 0;
+  margin: 0 auto;
+  width: $main-desktop;
+  position: relative;
+  text-align: left;
+
+  +mobile() {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.menu .menu-item {
+  border: 0;
+  display: inline-block;
+  height: 58px;
+  line-height: 58px;
+  position: relative;
+  text-align: left;
+  margin: 0 20px 0 0;
+  color: #fff;
+
+  +mobile() {
+    flex: 1;
+    -webkit-box-flex: 1;
+    margin: 0;
+  }
+
+  a {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 12px;
+    line-height: inherit;
+    transition-property: background-color;
+    the-transition();
+    color: #fff;
+    font-size: 16px;
+    border-bottom: none;
+
+    +mobile() {
+      text-align: center;
+      padding: 0;
+    }
+
+    i {
+      +mobile() {
+        display: none;
+      }
+    }
+  }
+
+  &.menu-item-active a {
+    @extend .menu .menu-item a:hover;
+  }
+
+  br { display: none; }
+
+  &.search {
+    float: right;
+    margin: 0 0 0 20px;
+
+    +mobile() {
+      display: none;
+    }
+
+    &:hover {
+      .search-input {
+        padding: 8px;
+        width: 120px;
+      }
+    }
+
+    .search-input {
+      border: none;
+      border-radius: 4px;
+      color: #555;
+      font-size: 13px;
+      outline: none;
+      width: 0;
+      padding: 3px 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .search-submit {
+      cursor: pointer;
+      margin-left: 5px;
+      background: none;
+      padding: 0;
+      border: none;
+      outline: none;
+
+      i {
+        font-size: 17px;
+        margin: 0;
+        text-shadow: 0 1px 1px rgba(0,0,0,.3)
+      }
+    }
+  }
+}
+
+.btn-bar {
+  background-color: white;
+}
+
+.site-nav-toggle {
+  left: 20px;
+  top: 50%;
+
+  -webkit-transform:  translateY(-50%);
+  transform:  translateY(-50%);
+
+  +tablet() {
+    display: block;
+  }
+}
+
+.site-subtitle {
+  text-align: center;
+  text-shadow: 0 1px 1px #47456d;
+  color: #fff;
+  font-size: 30px;
+}
+
+.site-master {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  top: -170px;
+  padding: 40px 0;
+  padding-bottom: 40px;
+  font-size: 16px;
+  opacity: .98;
+  background: rgba(230,244,249,.8);
+  z-index: 1;
+  animation: b 1s ease-out;
+  position: relative;
+  border-radius: 5px;
+
+  +mobile() {
+    display: none;
+  }
+
+  .site-master-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px dashed #fff;
+    padding: 5px;
+  }
+
+  .site-master-description {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0 0;
+    display: inline-block;
+    color: $main-color;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+  }
+}
+
+.submenu {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  list-style-type: none;
+  top: 58px;
+  background: rgb(255,255,255);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.14)
+
+  .submenu-item {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      background: #eee;
+    }
+  }
+
+  &.submenu-抓到我 {
+    left: -12px;
+    right: -12px;
+
+    +mobile() {
+      left: -32px;
+      right: -32px;
+    }
+  }
+
+  &.submenu-实验室 {
+    left: -10px;
+    right: -10px;
+
+    +mobile() {
+      left: -30px;
+      right: -30px;
+    }
+  }
+}
+
+.menu .menu-item .submenu a {
+  border-bottom: none;
+  line-height: 20px;
+  padding: 10px 0;
+  color: #444;
+  text-shadow: none;
+  font-size: 14px;
+
+  +mobile() {
+    padding: 8px 0;
+  }
+}

@@ -1,0 +1,61 @@
+// CSS Style Guide: http://codeguide.co/#css
+
+
+
+$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
+$variables = base $scheme custom;
+$mixins    = base $scheme custom;
+
+
+
+// Variables Layer
+// --------------------------------------------------
+for $variable in $variables
+  @import "_variables/" + $variable
+
+
+// Mixins Layer
+// --------------------------------------------------
+for $mixin in $mixins
+  @import "_mixins/" + $mixin;
+
+
+
+// Common Layer
+// --------------------------------------------------
+
+// Scaffolding
+@import "_common/scaffolding";
+
+// Layout
+@import "_common/outline";
+
+// Components
+@import "_common/components";
+
+
+// Schemes Layer
+// --------------------------------------------------
+@import "_schemes/" + $scheme;
+
+
+
+// Custom Layer
+// --------------------------------------------------
+@import "_custom/custom";
+
+@import "../../node_modules/nprogress/nprogress.css"
+
+#nprogress .bar {
+  background: $main-color;
+}
+
+.post-body .aplayer {
+  margin-bottom: 30px;
+}
+
+@import "../../node_modules/aplayer/dist/APlayer.min.css"
+
+@import "../../node_modules/zoom-image/css/zoom-image.css"
+
+@import "../../node_modules/disqusjs/dist/disqusjs.css"

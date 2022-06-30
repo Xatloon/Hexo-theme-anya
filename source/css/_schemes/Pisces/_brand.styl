@@ -1,0 +1,93 @@
+.site-brand-wrapper {
+  position: relative;
+  height: 650px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  +mobile() {
+    height: 260px;
+  }
+}
+
+.site-brand-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  picture,
+  img {
+    width: 100%;
+  }
+}
+
+.site-meta {
+  padding: 20px 0;
+  color: white;
+}
+
+.brand {
+  padding: 0;
+  background: none;
+  position: relative;
+  top: 180px;
+  font-size: 68px;
+  text-align: center;
+  text-shadow: 0 1px 1px #47456d;
+  margin-bottom: 130px;
+  z-index: 1;
+  font-family: $font-family-title;
+  display: block;
+
+  +mobile() {
+    font-size: 7.8vw;
+    top: 100px;
+    margin-bottom: 0;
+  }
+
+  &:hover { color: white; }
+}
+
+.site-subtitle {
+  margin: 10px 10px 0;
+  font-weight: initial;
+}
+
+.site-search form { display: none; }
+
+.site-title {
+  .guide {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .animate span {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .animate svg {
+    fill: #FF9800;
+    overflow: visible;
+    text-shadow: none;
+    height: 1px;
+  }
+
+  .animate use {
+    stroke: #fff;
+    stroke-width: 13px;
+    stroke-linejoin: round;
+  }
+
+  .animate {
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+  }
+}

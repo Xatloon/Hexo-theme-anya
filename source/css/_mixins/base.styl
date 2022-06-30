@@ -1,0 +1,148 @@
+the-transition() {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+the-transition-ease-in() {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+
+the-transition-ease-out() {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+}
+
+mobile-smallest() {
+  @media (max-width: 413px) {
+    {block}
+  }
+}
+
+mobile-small() {
+  @media (max-width: 567px) {
+    {block}
+  }
+}
+
+mobile() {
+  @media (max-width: 991px) {
+    {block}
+  }
+}
+
+tablet() {
+  @media (max-width: 0px) {
+    {block}
+  }
+}
+
+desktop() {
+  @media (min-width: 992px) {
+    {block}
+  }
+}
+
+desktop-large() {
+  @media (max-width: 0px) {
+    {block}
+  }
+}
+
+circle() {
+  border-radius: 50%;
+}
+
+transform() {
+  -webkit-transform: arguments
+  -moz-transform: arguments
+  -ms-transform: arguments
+  -o-transform: arguments
+  transform: arguments
+}
+
+hide() {
+  display: none !important;
+}
+
+show() {
+  display: block !important;
+}
+
+fixbutton() {
+  right: 20px;
+  opacity: 0.8;
+}
+
+random-color($min, $max) {
+  return floor(math(0, 'random') * ($max - $min + 1) + $min);
+}
+
+// Clearfix. http://nicolasgallagher.com/micro-clearfix-hack/
+clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after { clear: both; }
+}
+
+/* vietnamese */
+// @font-face {
+//   font-family: 'Sigmar One';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(/fonts/sigmarone1.woff2) format('woff2');
+//   unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+// }
+// /* latin-ext */
+// @font-face {
+//   font-family: 'Sigmar One';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(/fonts/sigmarone2.woff2) format('woff2');
+//   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+// }
+// /* latin */
+// @font-face {
+//   font-family: 'Sigmar One';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(/fonts/sigmarone3.woff2) format('woff2');
+//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+// }
+
+
+@font-face {
+  font-family: 'Candyshop';
+  src: url(https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/fonts/Candyshop.otf);
+  font-display: swap;
+}
+
+@font-face {
+    font-family: SFCompactRounded;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/fonts/SF-Compact-Rounded-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: SFCompactRounded;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/fonts/SF-Compact-Rounded-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: SFCompactRounded;
+    font-weight: 500;
+    src: url('https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/fonts/SF-Compact-Rounded-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: SFCompactRounded;
+    font-weight: 600;
+    src: url('https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/fonts/SF-Compact-Rounded-Semibold.otf') format('opentype');
+}

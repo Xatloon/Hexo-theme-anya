@@ -5,19 +5,6 @@
 
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/fonts/Candyshop.otf" as="font" type="font/otf" crossorigin="anonymous">
 
-{% if theme.pace %}
-  {% set pace_css_uri = url_for(theme.vendors._internal + '/pace/'+ theme.pace_theme +'.min.css?v=1.0.2') %}
-  {% set pace_js_uri = url_for(theme.vendors._internal + '/pace/pace.min.js?v=1.0.2') %}
-    {% if theme.vendors.pace %}
-      {% set pace_js_uri = theme.vendors.pace %}
-    {% endif %}
-    {% if theme.vendors.pace_css %}
-      {% set pace_css_uri = theme.vendors.pace_css %}
-    {% endif %}
-  <script src="{{ pace_js_uri }}"></script>
-  <link href="{{ pace_css_uri }}" rel="stylesheet">
-{% endif %}
-
 
 {% if theme.han %}
   {% set Han_uri = url_for(theme.vendors._internal + '/Han/dist/han.min.css?v=3.3') %}
@@ -71,12 +58,6 @@
   {% set font_awesome_uri = theme.vendors.fontawesome %}
 {% endif %}
 <link href="{{ font_awesome_uri }}" rel="stylesheet" type="text/css" />
-
-{% set social_share_uri = url_for(theme.vendors._internal + '/social-share.js/css/share.min.css?v=1.0.9') %}
-{% if theme.vendors.fontawesome %}
-  {% set social_share_uri = theme.vendors.social_share_css %}
-{% endif %}
-<link href="{{ social_share_uri }}" rel="stylesheet" type="text/css" />
 
 <link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 {% if theme.favicon.apple_touch_icon %}

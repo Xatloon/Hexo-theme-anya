@@ -6,7 +6,12 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    tag: "v*"
+    branches:
+      - main
+    # Triggers the workflow on pull request events but only for the "main" branch
+    pull_request:
+      branches:
+        - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -41,7 +46,7 @@ jobs:
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
-          title: "Sagiri-X ${{ github.ref_name }}"
+          title: "Sagiri-X Latest Release"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: false

@@ -63,8 +63,8 @@
 {% if theme.favicon.apple_touch_icon %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}?v={{ theme.version }}">
 {% endif %}
-{% if theme.favicon.narmal %}
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for(theme.favicon.narmal) }}?v={{ theme.version }}">
+{% if theme.favicon.normal %}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for(theme.favicon.normal) }}?v={{ theme.version }}">
 {% endif %}
 {% if theme.favicon.safari_pinned_tab %}
   <link rel="mask-icon" href="{{ url_for(theme.favicon.safari_pinned_tab) }}?v={{ theme.version }}" color="{{ theme.android_chrome_color }}">
@@ -141,7 +141,7 @@
     },
     favicon: {
       visibilitychange: {{theme.favicon.visibilitychange}},
-      narmal: '{{theme.favicon.narmal}}',
+      normal: '{{theme.favicon.normal}}',
       hidden: '{{theme.favicon.hidden}}',
       show_text: '{{theme.favicon.show_text}}',
       hide_text: '{{theme.favicon.hide_text}}'

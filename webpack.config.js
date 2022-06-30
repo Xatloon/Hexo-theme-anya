@@ -1,10 +1,6 @@
 /* eslint-disable no-undef */
 const path = require("path");
-const webpack = require("webpack");
-const { GitRevisionPlugin } = require("git-revision-webpack-plugin");
-const gitRevisionPlugin = new GitRevisionPlugin();
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -46,12 +42,12 @@ module.exports = {
     ],
   },
 
-  plugins: [
-    new BundleAnalyzerPlugin({
-      logLevel: "warn",
-      reportFilename: "video-report.html",
-      analyzerMode: "static",
-      openAnalyzer: false,
-    }),
-  ],
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false,
+      }),
+    ],
+  },
 };

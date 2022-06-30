@@ -59,21 +59,12 @@
 
     <canvas id="evanyou"></canvas>
 
-    {% if theme.needmoreshare2.enable and theme.needmoreshare2.float.enable %}
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
-      </div>
-    {% endif %}
-
   </div>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script type="text/javascript" src="{{ url_for(theme.js) }}/sagiri.min.js?v={{ theme.version }}"></script>
 
   {% include '_third-party/seo/baidu-push.swig' %}
-  {% include '_third-party/needsharebutton.swig' %}
   {% include '_third-party/rating.swig' %}
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}

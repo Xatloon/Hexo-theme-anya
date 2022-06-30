@@ -45,7 +45,7 @@ jobs:
         with: 
           title: "Sagiri-X ${{ github.ref_name }}"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: 'v*'
+          automatic_release_tag: 'latest'
           prerelease: false
           files: sagiri-x.zip
 

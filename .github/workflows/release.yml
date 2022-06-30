@@ -36,6 +36,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'sagiri-x.zip'
+          automatic_release_tag: '*'
           exclusions: '*.git* /*node_modules/* .editorconfig'
         
 

@@ -26,7 +26,7 @@ jobs:
       
       - name: Clone Theme
         run: |
-          git clone ${{ github.repositoryUrl }}
+          git clone https://github.com/XiangNorth/Hexo-theme-sagiri-x
           cd hexo-theme-sagiri-x
           
       - name: Compress it

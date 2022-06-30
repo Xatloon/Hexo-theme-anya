@@ -1,0 +1,47 @@
+// CSS Style Guide: http://codeguide.co/#css
+
+$variables = base custom;
+$mixins    = base custom;
+
+// Variables Layer
+// --------------------------------------------------
+for $variable in $variables
+  @import "_variables/" + $variable
+
+// Mixins Layer
+// --------------------------------------------------
+for $mixin in $mixins
+  @import "_mixins/" + $mixin;
+
+
+// Common Layer
+// --------------------------------------------------
+
+// Scaffolding
+@import "_common/scaffolding";
+
+// Layout
+@import "_common/outline";
+
+// Components
+@import "_common/components";
+
+
+// Schemes Layer
+// --------------------------------------------------
+@import "_schemes" ;
+
+// Custom Layer
+// --------------------------------------------------
+@import "_custom/custom";
+
+
+
+#nprogress .bar {
+  background: $main-color;
+}
+
+.post-body .aplayer {
+  margin-bottom: 30px;
+}
+

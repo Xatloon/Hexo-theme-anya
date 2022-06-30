@@ -40,7 +40,7 @@ jobs:
         with:
           type: "zip"
           filename: "sagiri-x.zip"
-          exclusions: "*.git* /*node_modules/* .editorconfig /*lib/* .github/* .gitignore .travis.yml .vscode/* .yarn/* /*Hexo-theme-sagiri-x/*"
+          exclusions: "*.git* /*node_modules/* .editorconfig /*lib/* .github/* .gitignore .travis.yml .vscode/* .yarn/* /*Hexo-theme-sagiri-x/* package.json"
 
       # Runs a single command using the runners shell
       - name: Automatic Releases

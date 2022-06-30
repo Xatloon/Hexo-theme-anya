@@ -127,18 +127,6 @@
       subtitle: '{{ theme.subtitle }}',
       author: '{{ theme.author }}'
     },
-    algolia: {
-      applicationID: '{{ theme.algolia.applicationID }}',
-      apiKey: '{{ theme.algolia.apiKey }}',
-      indexName: '{{ theme.algolia.indexName }}',
-      hits: {{ theme.algolia_search.hits | json_encode }},
-      labels: {{ theme.algolia_search.labels | json_encode }}
-    },
-    leancloud: {
-      enable: {{theme.leancloud_visitors.enable}},
-      appID: '{{theme.leancloud_visitors.app_id}}',
-      appKey: '{{theme.leancloud_visitors.app_key}}'
-    },
     favicon: {
       visibilitychange: {{theme.favicon.visibilitychange}},
       normal: '{{theme.favicon.normal}}',
@@ -150,7 +138,6 @@
 </script>
 {% set js_vendors = {} %}
 {% set js_vendors.jquery      = true %}
-{% set js_vendors.disqusjs    = true %}
 {% for name, internal in js_vendors %}
   <script type="text/javascript" src="{{ theme.vendors[name] }}"></script>
 {% endfor %}

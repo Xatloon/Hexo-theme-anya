@@ -660,10 +660,6 @@ vendors:
   # See: https://github.com/ftlabs/fastclick
   fastclick: https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js
 
-  # Internal version: 1.9.7
-  # See: https://github.com/tuupola/jquery_lazyload
-  lazyload: https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js
-
   # Internal version: 4.7.0
   # See: http://fontawesome.io/
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css

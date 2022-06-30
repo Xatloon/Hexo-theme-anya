@@ -59,7 +59,7 @@
 {% endif %}
 <link href="{{ font_awesome_uri }}" rel="stylesheet" type="text/css" />
 
-<link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+<link href="{{ url_for(theme.css) }}/sagirix.min.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 {% if theme.favicon.apple_touch_icon %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}?v={{ theme.version }}">
 {% endif %}
@@ -114,7 +114,7 @@
 
 {# Export some HEXO Configurations to Front-End #}
 <script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
+  var SagiriX = window.SagiriX || {};
   var CONFIG = {
     root: '{{ theme.root }}',
     version: '{{ theme.version }}',

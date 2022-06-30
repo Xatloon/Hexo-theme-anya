@@ -458,9 +458,6 @@ gitment:
 # See: https://www.google.com/webmasters/
 #google_site_verification:
 
-# Google Analytics
-google_analytics: UA-48084758-7
-
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
 #bing_site_verification:
@@ -468,9 +465,6 @@ google_analytics: UA-48084758-7
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
 #yandex_site_verification:
-
-# CNZZ count
-#cnzz_siteid:
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
@@ -512,13 +506,6 @@ rating:
   id: #<app_id>
   color: fc6423
 # ---------------------------------------------------------------
-
-# Show number of visitors to each article.
-# You can visit https://leancloud.cn get AppID and AppKey.
-leancloud_visitors:
-  enable: true
-  app_id: hRDdibVwWhuIGMhhzAMXiFYG-MdYXbMMI
-  app_key: DB8u9iGG8iMTGAGOKz28lIer
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/

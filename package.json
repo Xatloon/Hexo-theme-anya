@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --progress"
+    "build": "cross-env NODE_ENV=production node ./bundle.js"
   },
   "repository": {
     "type": "git",
@@ -27,26 +27,20 @@
     "@babel/core": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
     "aplayer": "1.10.1",
-    "coffeescript": "^2.7.0",
     "cross-env": "7.0.3",
     "disqusjs": "^3.0.1",
+    "dplayer": "1.26.0",
     "esbuild": "^0.14.48",
     "esbuild-stylus-loader": "^0.4.2",
-    "nprogress": "0.2.0",
-    "stylus": "^0.58.1",
-    "zoom-image": "0.1.4",
-    "corner-notie": "1.2.1",
-    "dplayer": "1.26.0",
     "fancybox": "3.0.1",
     "fastclick": "1.0.6",
     "gsap": "3.10.4",
     "jquery-pjax": "2.0.1",
     "lazyload": "2.0.0-rc.2",
-    "leancloud-storage": "4.12.3",
-    "node-fetch": "*",
+    "nprogress": "0.2.0",
     "react": "^18.2.0",
-    "regenerator-runtime": "^0.13.9",
-    "social-share.js": "1.0.16"
-  },
-  "dependencies": {}
+    "social-share.js": "1.0.16",
+    "stylus": "^0.58.1",
+    "zoom-image": "0.1.4"
+  }
 }

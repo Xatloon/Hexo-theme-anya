@@ -26,15 +26,17 @@ jobs:
 
       - name: Clone Theme
         run: |
-          git clone ${{ github.repositoryUrl }}
-          cd hexo-theme-sagiri-x
+          git clone https://github.com/XiangNorth/Hexo-theme-sagiri-x.git
+
+      - name: Go to Theme
+        run: cd Hexo-theme-sagiri-x
 
       - name: Compress it
         uses: thedoctor0/zip-release@main
         with:
           type: "zip"
           filename: "sagiri-x.zip"
-          exclusions: "*.git* /*node_modules/* .editorconfig"
+          exclusions: "*.git* /*node_modules/* .editorconfig /*lib/* .github/* .gitignore .travis.yml .vscode/* .yarn/*"
 
       # Runs a single command using the runners shell
       - name: Automatic Releases

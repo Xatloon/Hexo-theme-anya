@@ -201,13 +201,5 @@
       {% endif %}
 
     </div>
-
-    {% if theme.sidebar.nft %}
-    <div class="sidebar-nft sidebar-inner">
-      <div class="sidebar-nft-header">NFT 展示柜</div>
-      <div class="sidebar-nft-description">Powered by <a herf="https://unidata.app" target="_blank">Unidata</a></div>
-      <div class="sidebar-nft-body sidebar-nft-loading"><span>Loading...</span></div>
-    </div>
-    {% endif %}
   </aside>
 {% endmacro %}

@@ -27,8 +27,10 @@ jobs:
       - name: Clone Theme
         run: |
           git clone https://github.com/XiangNorth/Hexo-theme-sagiri-x
-          cd hexo-theme-sagiri-x
-          
+      
+      - name: Cd to
+        run: cd hexo-theme-sagiri-x
+      
       - name: Compress it
         uses: thedoctor0/zip-release@main
         with:

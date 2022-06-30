@@ -409,9 +409,6 @@ han: false
 # Baidu Analytics ID
 #baidu_analytics:
 
-# Duoshuo ShortName
-#duoshuo_shortname:
-
 # Disqus
 disqus:
   enable: true
@@ -424,12 +421,6 @@ disqus:
 
 # Hypercomments
 #hypercomments_id:
-
-# changyan
-changyan:
-  enable: false
-  appid:
-  appkey:
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
@@ -481,9 +472,6 @@ gitment:
 ##uid: Get this uid from http://www.jiathis.com/
 #add_this_id:
 
-# Share
-#duoshuo_share: true
-
 # NeedMoreShare2
 # This plugin is a pure javascript sharing lib which is useful in China.
 # See: https://github.com/revir/need-more-share2
@@ -533,15 +521,6 @@ google_analytics: UA-48084758-7
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
 # application_insights:
-
-# Make duoshuo show UA
-# user_id must NOT be null when admin_enable is true!
-# you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
 
 # Post widgets & FB/VK comments settings.
 # ---------------------------------------------------------------

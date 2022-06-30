@@ -1,4 +1,4 @@
-{% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname %}
+
   {% if theme.disqus.enable %}
 
     {% if page.comments %}
@@ -18,4 +18,4 @@
     {% endif %}
 
   {% endif %}
-{% endif %}
+

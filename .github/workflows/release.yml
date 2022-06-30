@@ -29,7 +29,7 @@ jobs:
           git clone https://github.com/XiangNorth/Hexo-theme-sagiri-x
       
       - name: Cd to
-        run: cd hexo-theme-sagiri-x
+        run: cd ./Hexo-theme-sagiri-x
       
       - name: Compress it
         uses: thedoctor0/zip-release@main

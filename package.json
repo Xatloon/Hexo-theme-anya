@@ -11,11 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DIYgod/hexo-theme-sagiri.git"
+    "url": "git+https://github.com/XiangNorth/hexo-theme-sagiri-x.git"
   },
   "keywords": [
     "sagiri",
-    "Hexo"
+    "sagiri-x",
+    "Hexo",
+    "theme",
+    "hexo-theme",
+    "hexo-theme-sagiri-x",
+    "hexo-theme-sagiri"
   ],
   "author": "XiangNorth",
   "license": "MIT",

@@ -1,5 +1,5 @@
 <nav class="site-nav">
-  {% set hasSearch = theme.swiftype_key || theme.tinysou_Key || theme.local_search.enable %}
+  {% set hasSearch = theme.tinysou_Key || theme.local_search.enable %}
 
   {% if theme.menu %}
     <ul id="menu" class="menu">
@@ -29,9 +29,7 @@
 
       {% if hasSearch %}
         <li class="menu-item menu-item-search">
-          {% if theme.swiftype_key %}
-            <a href="javascript:;" class="st-search-show-outputs">
-          {% elseif theme.local_search.enable || theme.algolia_search.enable %}
+          {% if theme.local_search.enable %}
             <a href="javascript:;" class="popup-trigger">
           {% endif %}
             {% if theme.menu_icons.enable %}
@@ -40,13 +38,14 @@
             {{ __('menu.search') }}
           </a>
         </li>
-      {% endif %}
+      {% else %}
       <li class="menu-item search">
           <form class="search-form">
             <input name="keyword" type="text" class="search-input" placeholder="站内搜索">
             <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
           </form>
       </li>
+      {% endif %}
     </ul>
   {% endif %}
 

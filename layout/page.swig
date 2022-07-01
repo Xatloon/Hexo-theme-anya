@@ -28,7 +28,7 @@
       {#################}
       {### PAGE BODY ###}
       {#################}
-      <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if page.direction && page.direction.toLowerCase() === 'rtl' %} rtl{% endif %}">
+      <div class="post-body{% if page.direction && page.direction.toLowerCase() === 'rtl' %} rtl{% endif %}">
         {# tagcloud page support #}
         {% if page.type === "tags" %}
           <div class="tag-cloud">
@@ -56,7 +56,7 @@
                 <li>
                 {% set linkInfo = link.split('||') %}
                   <a href="{{ linkInfo[0] }}" title="{{ name }}" target="_blank">
-                    <img class="no-fancybox" src="{{ linkInfo[1] }}">
+                    <img class="no-zoom" src="{{ linkInfo[1] }}">
                     <h4>{{ name }}</h4>
                     <p>{{ linkInfo[2] }}</p>
                   </a>

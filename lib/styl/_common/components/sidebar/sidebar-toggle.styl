@@ -12,16 +12,12 @@
   -webkit-transform: translateZ(0);
 
   +tablet() {
-    fixbutton() if hexo-config('sidebar.onmobile');
-    hide() if not hexo-config('sidebar.onmobile');
+    hide();
   }
   +mobile() {
-    fixbutton() if hexo-config('sidebar.onmobile');
-    hide() if not hexo-config('sidebar.onmobile');
+    hide();
   }
 }
-
-
 
 .sidebar-toggle-line {
   position: relative;

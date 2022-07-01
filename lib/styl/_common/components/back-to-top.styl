@@ -4,7 +4,7 @@
   bottom: $b2t-position-bottom;
   right: $b2t-position-right;
   z-index: $zindex-5;
-  width: hexo-config('sidebar.scrollpercent') ? initial : 24px;
+  width: 24px;
   font-size: $b2t-font-size;
   opacity: $b2t-opacity;
   color: $b2t-color;
@@ -15,12 +15,10 @@
   the-transition();
 
   +tablet() {
-    fixbutton() if hexo-config('sidebar.onmobile');
-    hide() if not hexo-config('sidebar.onmobile');
+    hide();
   }
   +mobile() {
-    fixbutton() if hexo-config('sidebar.onmobile');
-    hide() if not hexo-config('sidebar.onmobile');
+    hide();
   }
 
   &.back-to-top-on {

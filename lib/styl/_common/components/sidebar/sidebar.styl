@@ -17,10 +17,10 @@
   }
 
   +tablet() {
-    hide() if not hexo-config('sidebar.onmobile');
+    hide();
   }
   +mobile() {
-    hide() if not hexo-config('sidebar.onmobile');
+    hide();
   }
 
 }
@@ -49,4 +49,3 @@
 @import "sidebar-blogroll";
 @import "sidebar-nav";
 @import "sidebar-toc";
-@import "sidebar-dimmer" if hexo-config('sidebar.onmobile');

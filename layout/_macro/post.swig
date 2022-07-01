@@ -105,39 +105,6 @@
             {% endif %}
           </span>
 
-          {% if theme.post_wordcount.wordcount or theme.post_wordcount.min2read %}
-            <span class="post-wordcount">
-              {% if theme.post_wordcount.wordcount %}
-                {% if not theme.post_wordcount.separated_meta %}
-                  <span class="post-meta-divider">•</span>
-                {% endif %}
-                <span class="post-meta-item-icon">
-                  <i class="far fa-file-word"></i>
-                </span>
-                {% if theme.post_wordcount.item_text %}
-                  <span class="post-meta-item-text">{{ __('post.wordcount') }}</span>
-                {% endif %}
-                <span title="{{ __('post.wordcount') }}">{{ wordcount(post.content).replace(',', '') }}</span>
-              {% endif %}
-
-              {% if theme.post_wordcount.wordcount and theme.post_wordcount.min2read %}
-                <span class="post-meta-divider">•</span>
-              {% endif %}
-
-              {% if theme.post_wordcount.min2read %}
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                {% if theme.post_wordcount.item_text %}
-                  <span class="post-meta-item-text">{{ __('post.min2read') }} &asymp;</span>
-                {% endif %}
-                <span title="{{ __('post.min2read') }}">
-                  {{ min2read(post.content) }}
-                </span>
-              {% endif %}
-            </span>
-          {% endif %}
-
           {% if post.comments %}
             {% if theme.facebook_comments_plugin.enable %}
               <span class="post-comments-count">
@@ -160,18 +127,6 @@
                         data-disqus-identifier="{{ post.path }}" itemprop="commentCount"></span>
                 </a>
               </span>
-            {% elseif theme.hypercomments_id %}
-            <!--noindex-->
-              <span class="post-comments-count">
-                <span class="post-meta-divider">•</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
-                </a>
-              </span>
-              <!--/noindex-->
             {% elseif is_post() and theme.gitment.enable and theme.gitment.mint and theme.gitment.count %}
               <span class="post-comments-count">
                 <span class="post-meta-divider">•</span>
@@ -183,13 +138,6 @@
                 </a>
               </span>
             {% endif %}
-          {% endif %}
-
-          {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
-            <span class="post-meta-divider">•</span>
-            <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
-            </span>
           {% endif %}
 
           {% if post.description and (not theme.excerpt_description or not is_index) %}
@@ -205,7 +153,7 @@
     {#################}
     {### POST BODY ###}
     {#################}
-    <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
+    <div class="post-body{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
       {% if not is_index and toc(page.content).length > 1 %}<div class="post-toc-content"><div class="post-toc-title">文章目录</div>{{ toc(page.content, { "class": "nav", list_number: false }) }}</div>{% endif %}
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
@@ -213,7 +161,7 @@
           {% set COLUMN_NUMBER = 3 %}
           {% for photo in post.photos %}
             {% if loop.index0 % COLUMN_NUMBER === 0 %}<div class="post-gallery-row">{% endif %}
-              <a class="post-gallery-img fancybox"
+              <a class="post-gallery-img"
                  href="{{ url_for(photo) }}" rel="gallery_{{ post._id }}"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="{{ url_for(photo) }}" itemprop="contentUrl"/>
@@ -305,34 +253,6 @@
             <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
           {% endfor %}
         </div>
-      {% endif %}
-
-      {% if not is_index %}
-      {% if theme.rating.enable or (theme.vkontakte_api.enable and theme.vkontakte_api.like) or (theme.facebook_sdk.enable and theme.facebook_sdk.like_button) or (theme.needmoreshare2.enable and theme.needmoreshare2.postbottom.enable) %}
-        <div class="post-widgets">
-        {% if theme.rating.enable %}
-          <div class="wp_rating">
-            <div id="wpac-rating"></div>
-          </div>
-        {% endif %}
-
-        {% if (theme.vkontakte_api.enable and theme.vkontakte_api.like) or (theme.facebook_sdk.enable and theme.facebook_sdk.like_button) %}
-          <div class="social-like">
-            {% if theme.vkontakte_api.enable and theme.vkontakte_api.like %}
-              <div class="vk_like">
-                <span id="vk_like"></span>
-              </div>
-            {% endif %}
-
-            {% if theme.facebook_sdk.enable and theme.facebook_sdk.like_button %}
-              <div class="fb_like">
-                <div class="fb-like" data-layout="button_count" data-share="true"></div>
-              </div>
-            {% endif %}
-          </div>
-        {% endif %}
-        </div>
-      {% endif %}
       {% endif %}
 
       {% if not is_index and (post.prev or post.next) %}

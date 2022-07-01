@@ -6,7 +6,6 @@
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
-  {% include '_third-party/analytics/index.swig' %}
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}" class="theme-darling">
@@ -45,12 +44,9 @@
       </div>
     </footer>
 
-    {% if not theme.sidebar.b2t %}
+    {% if theme.sidebar.b2t %}
       <div class="back-to-top">
         <img src="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/images/scroll.png">
-        {% if theme.sidebar.scrollpercent %}
-          <span id="scrollpercent"><span>0</span>%</span>
-        {% endif %}
       </div>
     {% endif %}
 
@@ -61,8 +57,6 @@
   <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script type="text/javascript" src="{{ url_for(theme.js) }}/sagirix.min.js?v={{ theme.version }}"></script>
 
-  {% include '_third-party/seo/baidu-push.swig' %}
-  {% include '_third-party/rating.swig' %}
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}

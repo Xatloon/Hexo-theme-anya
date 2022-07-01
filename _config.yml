@@ -691,7 +691,5 @@ footer:
   # custom_text: 托管于<a href="https://github.com/" target="_blank" rel="nofollow"> GitHub</a>. <a href="https://www.upyun.com/" target="_blank" rel="nofollow">又拍云</a> 提供 CDN 服务. <a href="http://www.google.com/analytics/" target="_blank" rel="nofollow">Google Analytics </a>提供网站统计服务. <a href="https://www.cloudxns.net/" target="_blank" rel="nofollow">CloudXNS </a>提供 DNS 解析服务.
   sitemap: /sitemap.xml
 
-description: 写代码是热爱，写到世界充满爱！
-
 # Theme version
 version: 1.0.11

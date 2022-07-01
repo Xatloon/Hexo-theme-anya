@@ -59,7 +59,8 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
-
+  
+  {% if theme.service_worker %}
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -67,5 +68,6 @@
       });
     }
   </script>
+  {% endif %}
 </body>
 </html>

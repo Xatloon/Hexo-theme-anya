@@ -97,11 +97,6 @@
         <span class="logo-line-after"><i></i></span>
       </div>
     </div>
-      {% if theme.seo %}
-        <h1 class="site-subtitle" itemprop="description">{{ config.subtitle }}</h1>
-      {% else %}
-        <p class="site-subtitle">{{ config.subtitle }}</p>
-      {% endif %}
   </div>
 
   <div class="site-nav-toggle">
@@ -115,7 +110,7 @@
 <div class="site-master" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-master-avatar scaleup" itemprop="image" src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}" alt="{{ theme.author }}" />
     <h2 class="site-master-description scaleup" itemprop="description">
-        {{ theme.description }}
+        {{ config.description }}
     </h2>
 </div>
 {% include '../_custom/header.swig' %}

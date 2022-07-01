@@ -116,17 +116,6 @@
                   <span class="post-comments-count fb-comments-count" data-href="{{ post.permalink }}" itemprop="commentCount">0</span> comments
                 </a>
               </span>
-            {% elseif theme.disqus.enable and theme.disqus.count %}
-              <span class="post-comments-count">
-                <span class="post-meta-divider">•</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="{{ post.path }}" itemprop="commentCount"></span>
-                </a>
-              </span>
             {% elseif is_post() and theme.gitment.enable and theme.gitment.mint and theme.gitment.count %}
               <span class="post-comments-count">
                 <span class="post-meta-divider">•</span>
@@ -223,16 +212,6 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
-
-    {% if theme.wechat_subscriber.enabled and not is_index %}
-      <div>
-        {% include 'wechat-subscriber.swig' %}
-      </div>
-    {% endif %}
-
-    {% if not is_index %}
-      <div class="post-share">分享到：</div>
-    {% endif %}
 
     {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
       <div>

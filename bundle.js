@@ -5,7 +5,7 @@ const fs = require("fs");
 build({
   entryPoints: ["./lib/index.js"],
   bundle: true,
-  minify: false,
+  minify: true,
   platform: "node",
   outdir: "./source",
   plugins: [

@@ -13,7 +13,7 @@
       {% set display_toc = is_post and theme.toc.enable or is_page and theme.toc.enable %}
 
       {% if display_toc and toc(page.content).length > 1 %}
-        <ul class="sidebar-nav motion-element">
+        <ul class="sidebar-nav">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             {{ __('sidebar.toc') }}
           </li>
@@ -25,17 +25,17 @@
 
       <section class="site-overview-wrap sidebar-panel{% if not display_toc or toc(page.content).length <= 1 %} sidebar-panel-active{% endif %}">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <img class="site-author-image" itemprop="image"
               src="{{ url_for( theme.avatar | default(theme.images + '/card.jpg') ) }}"
               alt="{{ theme.author }}" />
             <div class="site-author-info">
-              <p class="site-author-name" itemprop="name">{{ theme.card.name }}</p>
-              <p class="site-description motion-element" itemprop="description">{{ theme.card.description }}</p>
+              <p class="site-author-name scaleup" itemprop="name">{{ theme.card.name }}</p>
+              <p class="site-description" itemprop="description">{{ theme.card.description }}</p>
             </div>
           </div>
 
-          <div class="links-of-author motion-element">
+          <div class="links-of-author">
             {% if theme.social %}
               {% for name, link in theme.social %}
                 <span class="links-of-author-item scaleup">
@@ -79,7 +79,7 @@
 
       {% if display_toc and toc(page.content).length > 1 %}
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <section class="post-toc-wrap sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             {% if page.toc_number === undefined %}

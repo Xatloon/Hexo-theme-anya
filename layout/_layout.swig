@@ -57,7 +57,6 @@
   <script type="text/javascript" src="{{ url_for(theme.js) }}/sagirix.min.js?v={{ theme.version }}"></script>
 
   {% include '_third-party/mathjax.swig' %}
-  {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
   
   {% if theme.service_worker %}

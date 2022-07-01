@@ -1,6 +1,4 @@
 <nav class="site-nav">
-  {% set hasSearch = theme.tinysou_Key || theme.local_search.enable %}
-
   {% if theme.menu %}
     <ul id="menu" class="menu">
       {% for name, path in theme.menu %}
@@ -27,11 +25,9 @@
         </li>
       {% endfor %}
 
-      {% if hasSearch %}
+      {% if theme.local_search.enable %}
         <li class="menu-item menu-item-search">
-          {% if theme.local_search.enable %}
             <a href="javascript:;" class="popup-trigger">
-          {% endif %}
             {% if theme.menu_icons.enable %}
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             {% endif %}
@@ -49,7 +45,7 @@
     </ul>
   {% endif %}
 
-  {% if hasSearch %}
+  {% if theme.local_search.enable %}
     <div class="site-search">
       {% include 'search.swig' %}
     </div>

@@ -40,6 +40,7 @@
     "react": "^18.2.0",
     "social-share.js": "1.0.16",
     "stylus": "^0.58.1",
+    "typescript": "^4.7.4",
     "vanilla-lazyload": "^17.8.2",
     "zoom-image": "0.1.4"
   }

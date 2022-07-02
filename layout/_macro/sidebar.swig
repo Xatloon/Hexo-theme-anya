@@ -26,11 +26,11 @@
       <section class="site-overview-wrap sidebar-panel{% if not display_toc or toc(page.content).length <= 1 %} sidebar-panel-active{% endif %}">
         <div class="site-overview">
           <div class="site-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <img class="site-author-image" itemprop="image"
+            <img class="site-author-image scaleup" itemprop="image"
               src="{{ url_for( theme.avatar | default(theme.images + '/card.jpg') ) }}"
               alt="{{ theme.author }}" />
             <div class="site-author-info">
-              <p class="site-author-name scaleup" itemprop="name">{{ theme.card.name }}</p>
+              <p class="site-author-name" itemprop="name">{{ theme.card.name }}</p>
               <p class="site-description" itemprop="description">{{ theme.card.description }}</p>
             </div>
           </div>

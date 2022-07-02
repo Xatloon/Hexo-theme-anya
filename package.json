@@ -31,9 +31,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
-    "aplayer": "1.10.1",
     "cross-env": "7.0.3",
-    "ejs": "^3.1.8",
     "esbuild": "^0.14.48",
     "esbuild-stylus-loader": "^0.4.2",
     "gsap": "3.10.4",
@@ -42,7 +40,6 @@
     "nprogress": "0.2.0",
     "stylus": "^0.58.1",
     "typescript": "^4.7.4",
-    "vanilla-lazyload": "^17.8.2",
     "zoom-image": "0.1.4"
   }
 }

@@ -1,17 +1,7 @@
 {% macro render(is_post) %}
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-
       {% set display_toc = is_post and theme.toc.enable or is_page and theme.toc.enable %}
-
       {% if display_toc and toc(page.content).length > 1 %}
         <ul class="sidebar-nav">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
@@ -27,7 +17,7 @@
         <div class="site-overview">
           <div class="site-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <img class="site-author-image scaleup" itemprop="image"
-              src="{{ url_for( theme.avatar | default(theme.images + '/card.jpg') ) }}"
+              src="{{ url_for( theme.card.avatar | default(theme.avatar)) }}"
               alt="{{ theme.author }}" />
             <div class="site-author-info">
               <p class="site-author-name" itemprop="name">{{ theme.card.name }}</p>
@@ -40,13 +30,9 @@
               {% for name, link in theme.social %}
                 <span class="links-of-author-item scaleup">
                   <a href="{{ trim(link.split('||')[0]) }}" target="_blank" title="{{ name }}">
-                    {% if theme.social_icons.enable %}
-                      {{ link.split('||')[1] }}{#
-                  #}{% endif %}{#
-                    #}{% if not theme.social_icons.icons_only %}{#
-                      #}{{ name }}{#
-                    #}{% endif %}{#
-                #}</a>
+                      {{ link.split('||')[2] }}
+                      <span>{{ link.split('||')[1] }}</span>
+               </a>
                 </span>
               {% endfor %}
             {% endif %}

@@ -36,7 +36,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-image">
-        <img src="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/images/footer.png">
+        <img src="">
       </div>
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
@@ -46,7 +46,7 @@
 
     {% if theme.sidebar.b2t %}
       <div class="back-to-top">
-        <img src="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/images/scroll.png">
+        <img src="/images/scroll.png">
       </div>
     {% endif %}
 

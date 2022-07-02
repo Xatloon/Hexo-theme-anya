@@ -54,12 +54,7 @@
 
 <div class="site-brand-wrapper">
   <div class="site-brand-bg">
-    <picture>
-      <source srcset="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/images/header-rss33.webp" type="image/webp" media="(max-width: 500px)">
-      <source srcset="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/images/header-rss33.png" type="image/png" media="(max-width: 500px)">
-      <source srcset="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/images/header-rss3.webp" type="image/webp">
-      <img loading="lazy" src="https://cdn.jsdelivr.net/gh/DIYgod/diygod.me/themes/sagiri/source/images/header-rss3.png">
-    </picture>
+      <img loading="lazy" src="{{ theme.header_bg  }}">
   </div>
   <div class="site-meta">
     <div class="custom-logo-site-title">

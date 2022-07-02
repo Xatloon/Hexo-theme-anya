@@ -1,12 +1,12 @@
 .site-nav {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   text-shadow: 0 1px 1px rgba(0,0,0,.3);
   z-index: 3;
-  background: linear-gradient(rgba(0,0,0,.5),transparent);
-  height: 100px;
+  background-color: rgba(255,255,255,0.72);
+  height: 56px;
 }
 
 .site-nav-on {
@@ -31,12 +31,12 @@
 .menu .menu-item {
   border: 0;
   display: inline-block;
-  height: 58px;
-  line-height: 58px;
+  height: 56px;
+  line-height: 56px;
   position: relative;
   text-align: left;
   margin: 0 20px 0 0;
-  color: #fff;
+  color: #0059B2
 
   +mobile() {
     flex: 1;
@@ -51,7 +51,7 @@
     line-height: inherit;
     transition-property: background-color;
     the-transition();
-    color: #fff;
+    color: #0059B2;
     font-size: 16px;
     border-bottom: none;
 
@@ -81,21 +81,14 @@
       display: none;
     }
 
-    &:hover {
-      .search-input {
-        padding: 8px;
-        width: 120px;
-      }
-    }
-
     .search-input {
       border: none;
-      border-radius: 4px;
+      border-radius: 10px;
       color: #555;
       font-size: 13px;
       outline: none;
-      width: 0;
-      padding: 3px 0;
+      padding: 8px;
+      width: 120px;
       transition: all 0.5s ease-in-out;
     }
 
@@ -116,22 +109,6 @@
   }
 }
 
-.btn-bar {
-  background-color: white;
-}
-
-.site-nav-toggle {
-  left: 20px;
-  top: 50%;
-
-  -webkit-transform:  translateY(-50%);
-  transform:  translateY(-50%);
-
-  +tablet() {
-    display: block;
-  }
-}
-
 .site-subtitle {
   text-align: center;
   text-shadow: 0 1px 1px #47456d;
@@ -141,18 +118,18 @@
 
 .site-master {
   text-align: center;
-  width: 70%;
+  width: 50%;
   margin: auto;
-  top: -170px;
+  top: -150px;
   padding: 40px 0;
   padding-bottom: 40px;
   font-size: 16px;
   opacity: .98;
-  background: rgba(230,244,249,.8);
+  background-color: #fff;
   z-index: 1;
   animation: b 1s ease-out;
   position: relative;
-  border-radius: 5px;
+  border-radius: 10px;
 
   +mobile() {
     display: none;
@@ -184,7 +161,8 @@
   text-align: center;
   list-style-type: none;
   top: 58px;
-  background: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.72);
+  backdrop-filter: blur(20px);
   height: 0;
   overflow: hidden;
   transition: height 0.2s ease-in-out;
@@ -199,22 +177,12 @@
   }
 
   &.submenu-抓到我 {
-    left: -12px;
-    right: -12px;
+    left: auto;
+    right: auto;
 
     +mobile() {
-      left: -32px;
-      right: -32px;
-    }
-  }
-
-  &.submenu-实验室 {
-    left: -10px;
-    right: -10px;
-
-    +mobile() {
-      left: -30px;
-      right: -30px;
+      left: auto;
+      right: auto;
     }
   }
 }

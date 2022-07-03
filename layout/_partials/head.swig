@@ -75,10 +75,5 @@
     }
   };
 </script>
-{% set js_vendors = {} %}
-{% set js_vendors.jquery      = true %}
-{% for name, internal in js_vendors %}
-  <script type="text/javascript" src="{{ theme.vendors[name] }}"></script>
-{% endfor %}
 
 {% include 'head/custom-head.swig' %}

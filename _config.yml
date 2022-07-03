@@ -335,9 +335,6 @@ vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
-  # Internal version: 2.1.3
-  jquery: https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
-
   # Internal version: 4.7.0
   # See: http://fontawesome.io/
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css

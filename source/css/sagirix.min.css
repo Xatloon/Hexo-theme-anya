@@ -596,6 +596,7 @@ td {
 }
 html {
   scroll-padding-top: 70px;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -1950,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 10px;
-  background: #8608c9;
+  background: #ffa22b;
 }
 .links-of-blogroll {
   font-size: 13px;

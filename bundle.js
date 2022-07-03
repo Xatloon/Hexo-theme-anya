@@ -16,6 +16,6 @@ build({
     }),
   ],
 }).then(() => {
-  fs.rename("./source/index.js", "./source/js/sagirix.min.js", () => {});
-  fs.rename("./source/index.css", "./source/css/sagirix.min.css", () => {});
+  fs.rename("./source/index.js", "./source/js/ania.min.js", () => {});
+  fs.rename("./source/index.css", "./source/css/ania.min.css", () => {});
 });

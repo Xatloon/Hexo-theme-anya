@@ -1,19 +1,14 @@
-<h1 align="center">Sagiri</h1>
+<h1 align="center">💘 Ania</h1>
 
-> As lovely as sagiri
-
-[![npm](https://img.shields.io/npm/v/hexo-theme-sagiri.svg?style=flat-square)](https://www.npmjs.com/package/hexo-theme-sagiri)
-[![npm](https://img.shields.io/npm/l/hexo-theme-sagiri.svg?style=flat-square)](https://github.com/DIYgod/hexo-theme-sagiri/blob/master/LICENSE)
-[![npm](https://img.shields.io/npm/dt/hexo-theme-sagiri.svg?style=flat-square)](https://www.npmjs.com/package/hexo-theme-sagiri)
-[![dependency Status](https://img.shields.io/david/DIYgod/hexo-theme-sagiri.svg?style=flat-square)](https://david-dm.org/DIYgod/hexo-theme-sagiri)
-[![devDependency Status](https://img.shields.io/david/dev/DIYgod/hexo-theme-sagiri.svg?style=flat-square)](https://david-dm.org/DIYgod/hexo-theme-sagiri#info=devDependencies)
-[![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?style=flat-square)](https://github.com/DIYgod/hexo-theme-sagiri#donate)
+> As lovely as ania
 
 ## Introduction
 
 Lovely theme for Hexo.
 
-As lovely as sagiri, based on [hexo-theme-next](https://github.com/iissnan/hexo-theme-next)
+As lovely as ania, based on [hexo-theme-sagiri](https://github.com/diygod/hexo-theme-sagiri) & [hexo-theme-next](https://github.com/iissnan/hexo-theme-next) 
+
+Inspired by @DIYgod & @MUI
 
 ## Who use hexo-theme-sagiri?
 

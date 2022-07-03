@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-{% set html_class = 'sagiri-x' %}
+{% set html_class = 'ania' %}
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
@@ -54,7 +54,7 @@
 
   </div>
 
-  <script type="text/javascript" src="{{ url_for(theme.js) }}/sagirix.min.js?v={{ theme.version }}"></script>
+  <script type="text/javascript" src="{{ url_for(theme.js) }}/ania.min.js?v={{ theme.version }}"></script>
 
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/exturl.swig' %}

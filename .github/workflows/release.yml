@@ -30,24 +30,24 @@ jobs:
 
       - name: Clone Theme
         run: |
-          git clone https://github.com/XiangNorth/hexo-theme-sagiri-x.git
+          git clone https://github.com/XiangNorth/hexo-theme-ania.git
 
       - name: Goto Theme
-        run: cd hexo-theme-sagiri-x
+        run: cd hexo-theme-ania
 
       - name: Compress it
         uses: thedoctor0/zip-release@main
         with:
           type: "zip"
-          filename: "sagiri-x.zip"
-          exclusions: "*.git* /*node_modules/* .editorconfig /*lib/* .github/* .gitignore .travis.yml .vscode/* .yarn/* /*hexo-theme-sagiri-x/* package.json"
+          filename: "ania.zip"
+          exclusions: "*.git* /*node_modules/* .editorconfig /*lib/* .github/* .gitignore .travis.yml .vscode/* .yarn/* /*hexo-theme-ania/* package.json"
 
       # Runs a single command using the runners shell
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
-          title: "Sagiri-X Latest Release"
+          title: "Ania Latest Release"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: false
-          files: sagiri-x.zip
+          files: ania.zip

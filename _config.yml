@@ -29,7 +29,7 @@ favicon:
   android_manifest:
 
 # Set default keywords (Use a comma to separate)
-keywords: "Sagiri-X,blog,hexo,hexo-theme-sagiri-x"
+keywords: "ania,blog,hexo,hexo-theme-ania"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -351,7 +351,7 @@ card:
   avatar: /images/DIYgod-avatar2.jpeg
   name: XiangNorth
   description: |
-    Styled by <a href="https://github.com/xiangnorth/hexo-theme-sagiri-x">Sagiri X</a><br>
+    Styled by <a href="https://github.com/xiangnorth/hexo-theme-ania">Ania</a><br>
     请在这里输入你的简介。<br>
     Edit this at: <br>
     _config.yml -> card -> avatar/name/description<br>
@@ -372,7 +372,7 @@ footer:
   powered: true
 
   theme:
-    # Theme info link (Theme by Sagiri-X).
+    # Theme info link (Theme by Ania).
     enable: true
     # Version info of NexT after scheme info (vX.X.X).
     version: true

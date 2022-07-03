@@ -1,7 +1,7 @@
 {
-  "name": "hexo-theme-sagiri-x",
+  "name": "hexo-theme-ania",
   "version": "0.1.0",
-  "description": "As lovely as sagiri",
+  "description": "As lovely as ania",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,23 +11,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XiangNorth/hexo-theme-sagiri-x.git"
+    "url": "git+https://github.com/XiangNorth/hexo-theme-ania.git"
   },
   "keywords": [
+    "ania",
     "sagiri",
-    "sagiri-x",
     "Hexo",
     "theme",
     "hexo-theme",
-    "hexo-theme-sagiri-x",
-    "hexo-theme-sagiri"
+    "hexo-theme-ania",
+    "xnor"
   ],
   "author": "XiangNorth",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/XiangNorth/Hexo-theme-sagiri-x/issues"
+    "url": "https://github.com/XiangNorth/Hexo-theme-ania/issues"
   },
-  "homepage": "https://github.com/XiangNorth/Hexo-theme-sagiri-x/",
+  "homepage": "https://github.com/XiangNorth/Hexo-theme-ania/",
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/preset-env": "^7.18.6",

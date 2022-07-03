@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-anya",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "As lovely as anya",
   "main": "index.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XiangNorth/hexo-theme-anya.git"
+    "url": "git@/github.com:XiangNorth/hexo-theme-anya.git"
   },
   "keywords": [
     "anya",

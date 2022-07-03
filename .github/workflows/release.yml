@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Release
 
 # Controls when the workflow will run
 on:
@@ -8,8 +8,9 @@ on:
   push:
     branches:
       - main
+    tags: "v*"
     # Triggers the workflow on pull request events but only for the "main" branch
-    pull_request:
+  pull_request:
       branches:
         - main
 

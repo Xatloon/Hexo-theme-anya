@@ -29,7 +29,7 @@ favicon:
   android_manifest:
 
 # Set default keywords (Use a comma to separate)
-keywords: "ania,blog,hexo,hexo-theme-ania"
+keywords: "anya,blog,hexo,hexo-theme-anya"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -63,17 +63,14 @@ menu:
   首页: / || fas fa-meteor
   实验室: javascript:; || fas fa-magic
   归档: /archives/ || fas fa-archive
-  关于我: /about/ || fas fa-heartbeat
+  页面: /page/ || fas fa-file-alt
 
 submenu:
   实验室:
-    Unidata: https://unidata.app/
-    RSSHub: https://docs.rsshub.app/
-    RSSHub Radar: https://chrome.google.com/webstore/detail/rsshub-radar/kefjpfngnndepjbopdmoebkipbgkggaa
-    DPlayer: http://dplayer.js.org/
-    APlayer: https://aplayer.js.org/
-    Miniflux: https://miniflux.diygod.me/
-    监控: https://status.diygod.me/
+    DIYgod: https://github.com/DIYgod/
+    XiangNorth: https://github.com/XiangNorth/
+    Anya: https://github.com/XiangNorth/Hexo-theme-Anya
+    Edit me: javascript:;
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -351,7 +348,7 @@ card:
   avatar: /images/DIYgod-avatar2.jpeg
   name: XiangNorth
   description: |
-    Styled by <a href="https://github.com/xiangnorth/hexo-theme-ania">Ania</a><br>
+    Styled by <a href="https://github.com/xiangnorth/hexo-theme-anya">Anya</a><br>
     请在这里输入你的简介。<br>
     Edit this at: <br>
     _config.yml -> card -> avatar/name/description<br>
@@ -372,7 +369,7 @@ footer:
   powered: true
 
   theme:
-    # Theme info link (Theme by Ania).
+    # Theme info link (Theme by Anya).
     enable: true
     # Version info of NexT after scheme info (vX.X.X).
     version: true

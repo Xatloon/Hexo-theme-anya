@@ -6,7 +6,7 @@
     由 <a href="https://hexo.io/" target="_blank" class="external" rel="nofollow">Hexo</a> 强力驱动.
     {% endif %}
     {% if theme.footer.theme.enable %}
-    Theme By <a href="https://github.com/XiangNorth/hexo-theme-ania" target="_blank" class="external" rel="nofollow">Ania</a>
+    Theme By <a href="https://github.com/XiangNorth/hexo-theme-anya" target="_blank" class="external" rel="nofollow">Anya</a>
     {% endif %}
     {% if theme.footer.theme.version %}
      v{{ theme.version }}.

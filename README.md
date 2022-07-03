@@ -1,27 +1,60 @@
-<h1 align="center">💘 Ania</h1>
+<h1 align="center">💘 Anya</h1>
 
-> As lovely as ania
+> As lovely as anya
+
+![Anya](https://cdn.jsdelivr.net/gh/XiangNorth/Living-room-for-Pic@main/2022/07/Fuuie2.png)
 
 ## Introduction
 
 Lovely theme for Hexo.
 
-As lovely as ania, based on [hexo-theme-sagiri](https://github.com/diygod/hexo-theme-sagiri) & [hexo-theme-next](https://github.com/iissnan/hexo-theme-next) 
+As lovely as anya, based on [hexo-theme-sagiri](https://github.com/diygod/hexo-theme-sagiri) & [hexo-theme-next](https://github.com/iissnan/hexo-theme-next) 
 
-Inspired by @DIYgod & @MUI
+Inspired by [@DIYgod](https://diygod.me) & [@MUI](https://mui.com)
 
-## Who use hexo-theme-sagiri?
+## Preview
 
-## Donate
+- https://xiangnorth.github.io/Hexo-theme-anya/
 
-- [Donate via Paypal](https://www.paypal.me/DIYgod)
-- [Donate via WeChat Pay](https://ws4.sinaimg.cn/large/006tKfTcgy1fhu1uowywej307s07st8h.jpg)
-- [Donate via Alipay](https://ws4.sinaimg.cn/large/006tKfTcgy1fhu1vf4ih7j307s07sdfm.jpg)
-- Donate via Bitcoin: 13CwQLHzPYm2tewNMSJBeArbbRM5NSmCD1
+## Usage
 
-## Author
+1. Locate to `project/themes` and run
+   
+```
+git clone https://github.com/XiangNorth/Hexo-theme-anya.git anya
+```
 
-**hexo-theme-sagiri** © [DIYgod](https://github.com/DIYgod), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by DIYgod with help from contributors ([list](https://github.com/DIYgod/hexo-theme-sagiri/contributors)).
+2. Config project/_config.yml
+   
+```
+theme: anya
+```
 
-> Blog [@Anotherhome](https://www.anotherhome.net) · GitHub [@DIYgod](https://github.com/DIYgod) · Twitter [@DIYgod](https://twitter.com/DIYgod) · Telegram Channel [@awesomeDIYgod](https://t.me/awesomeDIYgod)
+3. Modify `project/themes/anya/_config.yml` in your favor
+
+You can also download at [release](https://github.com/XiangNorth/Hexo-theme-anya/releases) and put it directly in the `themes` folder
+
+## Document
+
+coming soon...
+
+## Who use hexo-theme-anya?
+
+> Welcome to tell me you are using Anya!
+
+## Contributing
+
+I'm just learning frontend, so this project will definitely be improved.
+
+Feel free to tell me how to make it better!
+
+- ⇄ Pull requests and ★ Stars are always welcome.
+- For bugs and feature requests, please create an issue.
+
+## Changelog
+
+[Release](https://github.com/XiangNorth/Hexo-theme-anya/releases)
+
+## License
+
+All code licensed under the MIT License. All images licensed under Creative Commons Attribution 3.0 Unported License. In other words you are basically free to do whatever you want. Just don't remove my name from the source.

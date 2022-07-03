@@ -18,7 +18,7 @@
 {% endif %}
 
 <link href="{{ font_awesome_uri }}" rel="stylesheet" type="text/css" />
-<link href="{{ url_for(theme.css) }}/ania.min.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+<link href="{{ url_for(theme.css) }}/anya.min.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 
 {% if theme.favicon.apple_touch_icon %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}?v={{ theme.version }}">
@@ -54,7 +54,7 @@
 
 {# Export some HEXO Configurations to Front-End #}
 <script type="text/javascript" id="hexo.configurations">
-  var Ania = window.Ania || {};
+  var Anya = window.Anya || {};
   var CONFIG = {
     root: '{{ theme.root }}',
     version: '{{ theme.version }}',

@@ -30,24 +30,24 @@ jobs:
 
       - name: Clone Theme
         run: |
-          git clone https://github.com/XiangNorth/hexo-theme-ania.git
+          git clone https://github.com/XiangNorth/hexo-theme-anya.git
 
       - name: Goto Theme
-        run: cd hexo-theme-ania
+        run: cd hexo-theme-anya
 
       - name: Compress it
         uses: thedoctor0/zip-release@main
         with:
           type: "zip"
-          filename: "ania.zip"
-          exclusions: "*.git* /*node_modules/* .editorconfig /*lib/* .github/* .gitignore .travis.yml .vscode/* .yarn/* /*hexo-theme-ania/* package.json"
+          filename: "anya.zip"
+          exclusions: "*.git* /*node_modules/* .editorconfig /*lib/* .github/* .gitignore .travis.yml .vscode/* .yarn/* /*hexo-theme-anya/* package.json"
 
       # Runs a single command using the runners shell
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
-          title: "Ania Latest Release"
+          title: "Anya Latest Release"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: false
-          files: ania.zip
+          files: anya.zip

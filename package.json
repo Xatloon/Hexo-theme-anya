@@ -1,7 +1,7 @@
 {
-  "name": "hexo-theme-ania",
+  "name": "hexo-theme-anya",
   "version": "0.1.0",
-  "description": "As lovely as ania",
+  "description": "As lovely as anya",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,23 +11,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XiangNorth/hexo-theme-ania.git"
+    "url": "git+https://github.com/XiangNorth/hexo-theme-anya.git"
   },
   "keywords": [
-    "ania",
+    "anya",
     "sagiri",
     "Hexo",
     "theme",
     "hexo-theme",
-    "hexo-theme-ania",
+    "hexo-theme-anya",
     "xnor"
   ],
   "author": "XiangNorth",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/XiangNorth/Hexo-theme-ania/issues"
+    "url": "https://github.com/XiangNorth/Hexo-theme-anya/issues"
   },
-  "homepage": "https://github.com/XiangNorth/Hexo-theme-ania/",
+  "homepage": "https://github.com/XiangNorth/Hexo-theme-anya/",
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/preset-env": "^7.18.6",

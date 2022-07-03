@@ -5,7 +5,7 @@ const fs = require("fs");
 build({
   entryPoints: ["./lib/index.js"],
   bundle: true,
-  minify: false,
+  minify: true,
   platform: "node",
   outdir: "./source",
   plugins: [
@@ -16,6 +16,6 @@ build({
     }),
   ],
 }).then(() => {
-  fs.rename("./source/index.js", "./source/js/ania.min.js", () => {});
-  fs.rename("./source/index.css", "./source/css/ania.min.css", () => {});
+  fs.rename("./source/index.js", "./source/js/anya.min.js", () => {});
+  fs.rename("./source/index.css", "./source/css/anya.min.css", () => {});
 });

@@ -11,6 +11,8 @@
 
 ## 💫 Introduction
 
+English | [简体中文](./README_SC.md)
+
 Lovely theme for Hexo.
 
 As lovely as anya, based on [hexo-theme-sagiri](https://github.com/diygod/hexo-theme-sagiri) & [hexo-theme-next](https://github.com/iissnan/hexo-theme-next) 
@@ -19,7 +21,7 @@ Inspired by [@DIYgod](https://diygod.me) & [@MUI](https://mui.com)
 
 ## 🔍 Preview
 
-- https://xiangnorth.github.io/Hexo-theme-anya/
+- https://anya.xiangnorth.com/
 
 ## 🚀 Usage
 
@@ -73,7 +75,7 @@ You can also download at [release](https://github.com/XiangNorth/Hexo-theme-anya
 
 ### Modify configuration
 
-Modify `project/themes/anya/_config.yml` in your favor.
+Modify `project/_config.anya.yml` or `project/themes/anya/_config.yml` in your favor.
 
 ## 📖 Document
 

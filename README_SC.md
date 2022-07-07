@@ -4,10 +4,14 @@
 ![npm](https://img.shields.io/npm/v/hexo-theme-anya?logo=npm&style=for-the-badge)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/xiangnorth/hexo-theme-anya/Release?logo=github&style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![npm](https://img.shields.io/npm/dt/hexo-theme-anya?logo=npm&style=for-the-badge)
 
 > 像阿妮亚一样可爱 🍓
 
 ![Anya](https://cdn.jsdelivr.net/gh/XiangNorth/Living-room-for-Pic@main/2022/07/YR9spp.png)
+
+顶部图片: pixiv[@みつなり都](https://www.pixiv.net/users/7849704)  
+头像: Twitter[@sc_ome](https://twitter.com/sc_ome/status/1218826941555363842)
 
 ## 💫 简介
 

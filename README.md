@@ -7,13 +7,15 @@
 
 > As lovely as anya 🍓
 
-![Anya](https://cdn.jsdelivr.net/gh/XiangNorth/Living-room-for-Pic@main/2022/07/Fuuie2.png)
+![Anya](https://cdn.jsdelivr.net/gh/XiangNorth/Living-room-for-Pic@main/2022/07/YR9spp.png)
 
 ## 💫 Introduction
 
 English | [简体中文](./README_SC.md)
 
 Lovely theme for Hexo.
+
+A suitable [hexo-theme-sagiri](https://github.com/diygod/hexo-theme-sagiri) version that works right out of the box.
 
 As lovely as anya, based on [hexo-theme-sagiri](https://github.com/diygod/hexo-theme-sagiri) & [hexo-theme-next](https://github.com/iissnan/hexo-theme-next) 
 
@@ -34,11 +36,9 @@ Choose the way you like to install.
 ```
 npm install hexo-theme-anya --save
 ```
-or
 ```
 yarn add hexo-theme-anya
 ```
-or
 ```
 pnpm add hexo-theme-anya
 ```

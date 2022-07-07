@@ -7,13 +7,15 @@
 
 > 像阿妮亚一样可爱 🍓
 
-![Anya](https://cdn.jsdelivr.net/gh/XiangNorth/Living-room-for-Pic@main/2022/07/Fuuie2.png)
+![Anya](https://cdn.jsdelivr.net/gh/XiangNorth/Living-room-for-Pic@main/2022/07/YR9spp.png)
 
 ## 💫 简介
 
 [English](./README.md) | 简体中文
 
 可爱的 Hexo 主题。
+
+一个开箱即用版本的 [hexo-theme-sagiri](https://github.com/diygod/hexo-theme-sagiri) 。
 
 像阿妮亚一样可爱，基于 [hexo-theme-sagiri](https://github.com/diygod/hexo-theme-sagiri) 和 [hexo-theme-next](https://github.com/iissnan/hexo-theme-next)。
 
@@ -34,11 +36,10 @@ Choose the way you like to install.
 ```
 npm install hexo-theme-anya --save
 ```
-或者
+
 ```
 yarn add hexo-theme-anya
 ```
-或者
 ```
 pnpm add hexo-theme-anya
 ```
@@ -100,4 +101,4 @@ theme: anya
 
 ## 🍟 许可证
 
-所有代码遵循 MIT。所有图片遵循 Creative Commons Attribution 3.0 Unported License。换句话说你基本上可以做你想做的任何事，只要不把我的名字从源码中移除。
+所有代码遵循 MIT。所有图片遵循 Creative Commons Attribution 3.0 Unported License。换句话说只要不把我的名字从源码中移除，你基本上可以做你想做的任何事。

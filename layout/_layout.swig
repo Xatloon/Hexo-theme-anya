@@ -50,8 +50,6 @@
       </div>
     {% endif %}
 
-    <canvas id="evanyou"></canvas>
-
   </div>
 
   <script type="text/javascript" src="{{ url_for(theme.js) }}/anya.min.js?v={{ theme.version }}"></script>

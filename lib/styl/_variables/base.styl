@@ -258,37 +258,41 @@ $posts-collapse-left-mobile     = 5px
 // Sidebar
 // Variables for sidebar section elements.
 // --------------------------------------------------
-$sidebar-nav-color                    = $black-light
-$sidebar-nav-hover-color              = $whitesmoke
-$sidebar-highlight                    = $blue-bright
-
 $site-author-image-padding            = 2px
-$site-author-image-width              = 96px
 $site-author-image-height             = auto
-$site-author-image-border-width       = 2px
-$site-author-image-border-color       = $black-dim
-
-$site-author-name-margin              = 5px 0 0
-$site-author-name-color               = $whitesmoke
-$site-author-name-align               = center
-$site-author-name-weight              = normal
-
-$site-description-font-size           = 14px
-$site-description-color               = $grey-dark
-$site-description-margin-top          = 5px
-$site-description-align               = center
 
 $site-state-align                     = center
-$site-state-item-count-font-size      = 18px
 $site-state-item-count-color          = inherit
+$site-state-item-count-font-size      = 16px
 $site-state-item-name-font-size       = 13px
-$site-state-item-name-color           = inherit
-$site-state-item-border-color         = $black-dim
+$site-state-item-name-color           = $grey-dark
+$site-state-item-border-color         = $gainsboro
 
-$toc-link-color                       = $grey-dark
-$toc-link-border-color                = $black-light
-$toc-link-hover-color                 = $grey-light
-$toc-link-hover-border-color          = $grey-light
+$sidebar-offset             = unit(hexo-config('sidebar.offset'), px) if hexo-config('sidebar.offset') is a 'unit'
+
+$sidebar-nav-hover-color          = $orange
+$sidebar-highlight                = $orange
+
+$site-author-image-width          = 120px
+$site-author-image-border-width   = 1px
+$site-author-image-border-color   = $gainsboro
+
+$site-author-name-margin          = 0
+$site-author-name-color           = $black-deep
+$site-author-name-align           = center
+$site-author-name-weight          = $font-weight-bold
+
+$site-description-font-size       = 13px
+$site-description-color           = $grey-dark
+$site-description-margin-top      = 0
+$site-description-align           = center
+
+
+
+$toc-link-color                       = $grey-dim
+$toc-link-border-color                = $grey-light
+$toc-link-hover-color                 = black
+$toc-link-hover-border-color          = black
 $toc-link-active-color                = $sidebar-highlight
 $toc-link-active-border-color         = $sidebar-highlight
 $toc-link-active-current-color        = $sidebar-highlight
@@ -427,40 +431,7 @@ $border-radius                    = 10px;
 // --------------------------------------------------
 $subtitle-color                   = $gray-lighter
 
-// Sidebar
-// --------------------------------------------------
-$sidebar-offset             = unit(hexo-config('sidebar.offset'), px) if hexo-config('sidebar.offset') is a 'unit'
 
-$sidebar-nav-hover-color          = $orange
-$sidebar-highlight                = $orange
-
-$site-author-image-width          = 120px
-$site-author-image-border-width   = 1px
-$site-author-image-border-color   = $gainsboro
-
-$site-author-name-margin          = 0
-$site-author-name-color           = $black-deep
-$site-author-name-align           = center
-$site-author-name-weight          = $font-weight-bold
-
-$site-description-font-size       = 13px
-$site-description-color           = $grey-dark
-$site-description-margin-top      = 0
-$site-description-align           = center
-
-$site-state-item-count-font-size  = 16px
-$site-state-item-name-font-size   = 13px
-$site-state-item-name-color       = $grey-dark
-$site-state-item-border-color     = $gainsboro
-
-$toc-link-color                       = $grey-dim
-$toc-link-border-color                = $grey-light
-$toc-link-hover-color                 = black
-$toc-link-hover-border-color          = black
-$toc-link-active-color                = $sidebar-highlight
-$toc-link-active-border-color         = $sidebar-highlight
-$toc-link-active-current-color        = $sidebar-highlight
-$toc-link-active-current-border-color = $sidebar-highlight
 
 
 // Components

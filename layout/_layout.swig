@@ -36,7 +36,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-image">
-        <img src="">
+        <img src="{{ theme.footer.decoration }}">
       </div>
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}

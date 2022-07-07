@@ -12,8 +12,8 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  color: $text-color;
-  background: $body-bg-color;
+  color: $anya-text;
+  background: $anya-white;
 
   +mobile() { padding-right: 0 !important; }
   +tablet() { padding-right: 0 !important; }
@@ -45,16 +45,11 @@ for headline in (1..6) {
 p { margin: 0 0 20px 0; }
 
 a {
-  color: $link-color;
+  color: $anya-theme;
   text-decoration: none;
   outline: none;
   border-bottom: 1px solid $grey-dark;
   word-wrap: break-word;
-
-  &:hover {
-    color: $link-hover-color;
-    border-bottom-color: $link-decoration-hover-color;
-  }
 }
 
 blockquote {

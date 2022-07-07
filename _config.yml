@@ -19,14 +19,14 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  visibilitychange: false
+  visibilitychange: true
   normal: /favicon.ico
   hidden: /failure.ico
   show_text: (/≧▽≦/)咦！又好了！
   hide_text: (●—●)喔哟，崩溃啦！
   apple_touch_icon: /apple-touch-icon.png
   safari_pinned_tab: /safari-pinned-tab.svg
-  android_manifest:
+  android_manifest: /site.webmanifest
 
 # Set default keywords (Use a comma to separate)
 keywords: "anya,blog,hexo,hexo-theme-anya"
@@ -109,8 +109,8 @@ links:
   kn007: https://kn007.net/ || /images/link/kn007.jpeg || 这家伙很懒，什么也没有留下
 
 # Header Avatar
-# Default in theme directory(source/images): /avatar.gif
-avatar: /images/DIYgod-avatar2.jpeg
+# Default in theme directory(source/images): /Anya.png
+avatar: /images/Anya.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -160,8 +160,8 @@ post_meta:
 
 # Reward
 reward_comment:
-wechatpay: /images/wechatpay.png
-alipay: /images/alipay.png
+wechatpay:
+alipay:
 bitcoin:
 
 # Declare license on posts
@@ -341,11 +341,11 @@ css: css
 js: js
 images: images
 
-header_bg: /images/header-rss3.png
+header_bg: /images/header.jpg
 
 card:
   # Default same as avatar
-  avatar: /images/DIYgod-avatar2.jpeg
+  avatar:
   name: XiangNorth
   description: |
     Styled by <a href="https://github.com/xiangnorth/hexo-theme-anya">Anya</a><br>

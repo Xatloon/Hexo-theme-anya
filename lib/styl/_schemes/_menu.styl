@@ -5,9 +5,10 @@
   top: 0;
   text-shadow: 0 1px 1px rgba(0,0,0,.3);
   z-index: 3;
-  background-color: rgba(255,255,255,0.72);
+  background-color: #D6B977AD;
   backdrop-filter: blur(20px);
   height: 56px;
+  border-bottom: 2px dashed $anya-text;
 }
 
 .site-nav-on {
@@ -37,7 +38,7 @@
   position: relative;
   text-align: left;
   margin: 0 20px 0 0;
-  color: #0059B2
+  color: $anya-text
 
   +mobile() {
     flex: 1;
@@ -52,7 +53,7 @@
     line-height: inherit;
     transition-property: background-color;
     the-transition();
-    color: #0059B2;
+    color: $anya-text;
     font-size: 16px;
     border-bottom: none;
 
@@ -105,6 +106,7 @@
         font-size: 17px;
         margin: 0;
         text-shadow: 0 1px 1px rgba(0,0,0,.3)
+        color: $anya-text;
       }
     }
   }
@@ -140,7 +142,7 @@
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    border: 2px dashed #fff;
+    border: 2px dashed #D6B977;
     padding: 5px;
   }
 
@@ -149,7 +151,7 @@
     font-weight: 700;
     margin: 20px 0 0;
     display: inline-block;
-    color: $main-color;
+    color: $anya-theme;
     text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
   }
 }

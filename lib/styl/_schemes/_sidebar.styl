@@ -49,10 +49,11 @@
 }
 
 .site-author-name {
+  margin: $site-author-name-margin;
   text-align: left;
   font-size: 20px;
   letter-spacing: .5px;
-  color: #FF9800;
+  color: $anya-theme;
   text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
   font-weight: 700;
   line-height: 30px;
@@ -62,17 +63,15 @@
   margin: 0;
   font-size: 12px;
   text-align: left;
-  color: #555;
+  color: $anya-text;
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
 .sidebar a {
-  color: $black-light;
-
-  &:hover { color: $link-hover-color; }
+  color: $anya-theme;
 }
 
 .site-state-item {
@@ -141,7 +140,7 @@
     height: 25px;
     line-height: 25px;
     border-radius: 10px;
-    color: rgba(0,0,0,.5);
+    color: $anya-text;
     fill: rgba(0,0,0,.5);
     background-color: rgba(230,244,249,.8);
     transition: all .3s ease-in-out;
@@ -171,29 +170,10 @@
     }
 
     span {
-      color: rgba(0,0,0,.5);
       vertical-align: middle;
     }
   }
   .fa-globe { font-size: 15px; }
-}
-
-
-.links-of-blogroll {
-  text-align: center;
-  margin-top: 20px;
-  padding: 3px 0 0;
-  border-top: 1px dotted $grey-light;
-}
-.links-of-blogroll-title { margin-top: 0; }
-.links-of-blogroll-item { padding: 0; }
-.links-of-blogroll-inline {
-  clearfix();
-
-  .links-of-blogroll-item {
-    sidebar-inline-links-item();
-    display: inline-block;
-  }
 }
 
 .fa-more:before {

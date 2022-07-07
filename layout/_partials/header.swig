@@ -91,7 +91,7 @@
   </div>
 </div>
 <div class="site-master" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-master-avatar scaleup" itemprop="image" src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}" alt="{{ theme.author }}" />
+    <img class="site-master-avatar scaleup" itemprop="image" src="{{ url_for( theme.avatar | default(theme.images + '/Anya.png') ) }}" alt="{{ theme.author }}" />
     <h2 class="site-master-description scaleup" itemprop="description">
         {{ config.description }}
     </h2>

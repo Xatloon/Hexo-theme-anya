@@ -11,7 +11,8 @@
 ![Anya](https://cdn.jsdelivr.net/gh/XiangNorth/Living-room-for-Pic@main/2022/07/YR9spp.png)
 
 Header: pixiv[@みつなり都](https://www.pixiv.net/users/7849704)  
-Avatar: Twitter[@sc_ome](https://twitter.com/sc_ome/status/1218826941555363842)
+Avatar: Twitter[@sc_ome](https://twitter.com/sc_ome/status/1218826941555363842)  
+Cursor: Bilibili[@Moos柚眠](https://www.bilibili.com/video/BV1PY411u75g)
 
 ## 💫 Introduction
 

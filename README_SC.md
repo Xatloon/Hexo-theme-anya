@@ -11,7 +11,8 @@
 ![Anya](https://cdn.jsdelivr.net/gh/XiangNorth/Living-room-for-Pic@main/2022/07/YR9spp.png)
 
 顶部图片: pixiv[@みつなり都](https://www.pixiv.net/users/7849704)  
-头像: Twitter[@sc_ome](https://twitter.com/sc_ome/status/1218826941555363842)
+头像: Twitter[@sc_ome](https://twitter.com/sc_ome/status/1218826941555363842)  
+鼠标指针: Bilibili[@Moos柚眠](https://www.bilibili.com/video/BV1PY411u75g)
 
 ## 💫 简介
 
